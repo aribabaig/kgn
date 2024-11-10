@@ -1,0 +1,133 @@
+@media screen and (max-width:500px){
+   
+    .navbar {
+        display: none; /* Hide navbar by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Below the header */
+        left: 0;
+        width: 100%;
+        background: #fff; /* Background for the dropdown */
+        transition: max-height 0.3s ease-out; /* Smooth transition */
+        max-height: 0; /* Start with max-height 0 for animation */
+        overflow: hidden; /* Hide overflow */
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when active */
+        max-height: 300px; /* Set a max-height for dropdown */
+    }
+    .imglogo {
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #menubtn {
+        display: block; /* Show the menu button */
+    }
+
+    header {
+        padding: 0 5%; /* Reduce padding on mobile */
+    }
+    .home button, button>img{
+        display: none;
+    }
+    section{
+        padding: 70px 10% 90px;
+    }
+    .home{
+        display: block;
+        height: fit-content;
+    }
+    .feature .feature-content{
+        flex-direction: column;
+    }
+    .property .popular-container{
+        flex-direction: column;
+    }
+    .property .popular-card{
+        margin-bottom: 1rem;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .about-img img{
+        height: 30%;
+        width: 300px;
+    }
+    .subscribe .subscribe-content{
+        height: 300px;
+    }
+    .subscribe .subscribe-content h2{
+        font-size: 25px;
+    }
+    .subscribe .subscribe-content p{
+        all: unset;
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    .contact {
+        flex-direction: column;
+        align-items:flex-start ;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    section{
+        overflow-x: hidden;
+        padding: 70px 7% 70px;
+    }
+   
+    .home button>img{
+        height: 410px;
+    }
+    .home button{
+        width: 200px;
+        height: 200px;
+    }
+    .feature{
+        overflow-x: hidden;
+    }
+    .feature 
+    .feature-content{
+        display: grid;
+    }
+    .popular-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    /* .about .about-img{
+        height: 300px;
+        width: 300px;
+    }
+    .about p{
+        font-size: .7rem;
+        margin-bottom: 10px;
+    } */
+    .about h2{
+        font-size: 2rem;
+
+    }.contact{
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:1200px){
+    .feature{
+        overflow-x: hidden;
+    }
+    .feature .f-img img{
+        width: 250px;
+        height: 170px;
+    }
+   section.property{
+      padding: 50px 2% 70px;  
+    }
+    section.about{
+        padding: 80px 5% 70px;
+    }
+}
