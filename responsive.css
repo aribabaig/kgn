@@ -37,7 +37,8 @@
     }
     .home{
         display: block;
-        height: fit-content;
+        height:100vh;
+       
     }
     .feature .feature-content{
         flex-direction: column;
